@@ -1,0 +1,13 @@
+{%extends 'polls/index.html'%}
+{%block content%}
+    <div class="box">
+        <h2 class="title">Assign worker</h1>
+        <form action="" method="POST">
+            <ul>
+                {%csrf_token%}
+                {{form.as_ul}}
+            </ul>
+            <input class="create" type="submit" value="Assign">
+        </form>
+    </div>
+{%endblock%}
