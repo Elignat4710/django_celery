@@ -43,7 +43,7 @@ def statistic():
         mail_list = list(company.manager.value_list('email', flat=True))
         overtime = hours_total - company.work.time_limit
         if overtime > 0:
-            send_mail_overtime.delat(
+            send_mail_overtime.delay(
                 worker_name=worker_name,
                 limit_hours=overtime,
                 recipient_list=mail_list
