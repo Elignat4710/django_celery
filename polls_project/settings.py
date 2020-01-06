@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls.apps.PollsConfig',
+    'rest_framework',
+    'rest_framework_swagger',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
@@ -176,4 +179,14 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'polls.tasks.statistic',
         'schedule': crontab(day_of_week=1)
         }
+}
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'PAGE_SIZE': 10,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
 }

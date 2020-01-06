@@ -15,8 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from polls.urls import router
+from rest_framework.authtoken.views import obtain_auth_token
+from rest_framework_swagger.views import get_swagger_view
+
+
+schema_view = get_swagger_view(title='My project')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('polls.urls'))
+    path('api/', include(router.urls)),
+    path('auth/', obtain_auth_token, name='auth'),
+    path(r'', schema_view)
 ]

@@ -19,7 +19,8 @@ class Company(models.Model):
 class Manager(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField(unique=True)
-    com_name = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE,
+                                related_name='managers')
 
     def __str__(self):
         return self.name
@@ -34,8 +35,9 @@ class Worker(models.Model):
 
 class Work(models.Model):
     name = models.CharField(max_length=200)
-    com_name = models.ForeignKey(Company, on_delete=models.CASCADE)
-    time_limit = models.IntegerField()
+    com_name = models.ForeignKey(Company, on_delete=models.CASCADE,
+                                 related_name='works')
+    time_limit = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -43,17 +45,18 @@ class Work(models.Model):
 
 class WorkPlace(models.Model):
     name = models.CharField(max_length=200)
-    worker_name = models.OneToOneField(
-        Worker, on_delete=models.CASCADE, primary_key=True
-        )
-    work_name = models.ForeignKey(Work, on_delete=models.CASCADE)
+    worker_name = models.ForeignKey(
+        Worker, on_delete=models.CASCADE,
+        related_name='worker')
+    work_name = models.ForeignKey(Work, on_delete=models.CASCADE,
+                                  related_name='work')
     choice = [
         (NEW, 'New'),
         (APPROVED, 'Approved'),
         (CANCELLED, 'Cancelled'),
         (FINISHED, 'Finished'),
         ]
-    status = models.IntegerField(choices=choice)
+    status = models.IntegerField(choices=choice,)
 
     def __str__(self):
         return self.name
@@ -71,6 +74,8 @@ class WorkTime(models.Model):
     worker = models.ForeignKey(Worker, on_delete=models.CASCADE)
     work = models.ForeignKey(Work, on_delete=models.CASCADE)
     hours_worked = models.IntegerField()
+    workplace = models.ForeignKey(
+        WorkPlace, related_name='worktimes', on_delete=models.CASCADE)
 
 
 class Statistic(models.Model):
