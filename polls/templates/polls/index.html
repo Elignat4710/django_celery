@@ -1,11 +1,22 @@
 {% load static %}
-<link rel="stylesheet" type ="text/css" href="{% static 'polls/style.css' %}">
 
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" type ="text/css" href="{% static 'polls/style.css' %}">
     <meta charset="utf-8">
     <title></title>
+  <script>
+    (function() {
+      var websocket = new WebSocket('ws://' + window.location.host + '/ws/');
+      websocket.onmessage = function(e) {
+          var data = JSON.parse(e.data);
+          if(data['reload_page']){
+              location.reload();
+          }
+      };
+    })();
+    </script>
   </head>
   <body>
       <header>
@@ -22,4 +33,5 @@
         {%endblock%}
       </main>
   </body>
+  
 </html>

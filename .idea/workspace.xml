@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7c6754e3-1680-45cf-8895-525315ae0659" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="rest" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VvSowTFdpwvASpBmxMuoTfvnZM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7c6754e3-1680-45cf-8895-525315ae0659" name="Default Changelist" comment="" />
+      <created>1578132254384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578132254384</updated>
+      <workItem from="1578132261363" duration="12561000" />
+      <workItem from="1578220309367" duration="10711000" />
+      <workItem from="1578300795819" duration="1762000" />
+      <workItem from="1578516438377" duration="180000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="468" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578137172945">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="468" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1474.864@0.0.1474.864" timestamp="1578137172945" />
+    <state x="518" y="188" key="FileChooserDialogImpl" timestamp="1578222548006">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="518" y="188" key="FileChooserDialogImpl/0.0.1474.864@0.0.1474.864" timestamp="1578222548006" />
+    <state x="729" y="164" width="540" height="524" key="StructurePopup" timestamp="1578144165322">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="729" y="164" width="540" height="524" key="StructurePopup/0.0.1474.864@0.0.1474.864" timestamp="1578144165322" />
+    <state x="435" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1578516445770">
+      <screen x="0" y="0" width="1474" height="864" />
+    </state>
+    <state x="435" y="239" key="com.intellij.ide.util.TipDialog/0.0.1474.864@0.0.1474.864" timestamp="1578516445770" />
+  </component>
+</project>
